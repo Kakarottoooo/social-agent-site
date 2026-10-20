@@ -46,11 +46,12 @@
     machine-learning models.</p>
 
   <h2>5. Chat apps (optional)</h2>
-  <p>If you connect Telegram, WhatsApp, Instagram or Messenger, you chat with the app's official account on that
-    service. Your messages to that account pass through a small gateway run by the developer on Cloudflare, which
+  <p>If you connect Telegram, WhatsApp, Instagram, Messenger, Slack or Discord, you chat with the app's official
+    account on that service. Your messages to that account pass through a small gateway run by the developer on Cloudflare, which
     forwards them to your own computer and sends the app's replies back. The gateway keeps a message only until your
     computer collects it (at most 7 days if it stays offline) and stores nothing else about the conversation except
-    which chat belongs to which computer. It never receives your Google data. Messages you send on those services are
+    which chat belongs to which computer (for Slack, also the access token your workspace grants when you add the
+    app, used only to reply in your direct messages with it). It never receives your Google data. Messages you send on those services are
     also subject to their own privacy policies.</p>
 
   <h2>6. Google API Services User Data Policy</h2>
@@ -78,7 +79,7 @@
   <p>本应用由你安装在自己的电脑上运行。经你授权后，它可以读取 Gmail（并在你批准某封草稿后才代为发送）、只读访问日历和通讯录，
     用来整理你的人脉、提醒你该联系谁、帮你起草消息。所有数据只存在你自己的电脑上，开发者没有服务器、也接触不到你的数据；
     不出售、不用于广告。为了总结和起草，相关文字会通过你自己的 Claude 账号发给 Anthropic 处理，不会用来训练通用 AI 模型。
-    若连接 Telegram、WhatsApp、Instagram 或 Messenger，你发给官方账号的消息会经开发者在 Cloudflare 上的网关转发到你的电脑，取走即删（最多保留 7 天），不经手你的 Google 数据。你可以随时在 Google 账户中撤销授权，或在应用里导出、删除任何人的数据。</p>
+    若连接 Telegram、WhatsApp、Instagram、Messenger、Slack 或 Discord，你发给官方账号的消息会经开发者在 Cloudflare 上的网关转发到你的电脑，取走即删（最多保留 7 天），不经手你的 Google 数据。你可以随时在 Google 账户中撤销授权，或在应用里导出、删除任何人的数据。</p>
 </main>
 </body>
 </html>
