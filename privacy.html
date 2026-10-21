@@ -3,83 +3,129 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy · Personal Social Agent</title>
+<title>Privacy Policy · Renmai</title>
+<link rel="canonical" href="https://renmai.onegent.one/privacy.html">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <p><a href="index.html">← Personal Social Agent</a></p>
-  <h1>Privacy Policy</h1>
-  <p class="small">Last updated: October 21, 2026 (chat gateway added)</p>
+  <p><a href="index.html">← Renmai · 人脉</a></p>
+  <p><i>This policy also lives at <a href="https://renmai.onegent.one/privacy.html">https://renmai.onegent.one/privacy.html</a>
+  and <a href="https://renmai-agent.fly.dev/privacy.html">https://renmai-agent.fly.dev/privacy.html</a>; all copies are the same.</i></p>
 
-  <p>Personal Social Agent ("the app") is software that you install and run on your own computer. This policy explains
-    what data the app accesses, how it is used, and where it is stored.</p>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: October 21, 2026</p>
 
-  <h2>1. Data the app accesses</h2>
-  <p>Only with your permission, through Google's sign-in screen, the app may access:</p>
-  <ul>
-    <li><strong>Gmail</strong> (read and send): to find the people you correspond with, notice when someone replies,
-      and send an email <em>only after you approve that exact draft</em>.</li>
-    <li><strong>Google Calendar</strong> (read only): to prepare you before upcoming meetings.</li>
-    <li><strong>Google Contacts</strong> (read only): to add your saved contacts to your contact list.</li>
-  </ul>
-  <p>You may also choose to import data exports from other services (for example LinkedIn, X, Instagram, Facebook,
-    WhatsApp, your phone's address book or iMessage history). The app reads only what you import.</p>
+<p>Renmai ("人脉", "we", "us") is a personal relationship and social assistant at <a href="https://renmai.onegent.one/">https://renmai.onegent.one/</a>
+(also reachable at https://renmai-agent.fly.dev/). It is operated by its independent developer, Ziwei Guo. Contact:
+<a href="mailto:gzw13979725269@gmail.com">gzw13979725269@gmail.com</a>.</p>
 
-  <h2>2. How the data is used</h2>
-  <ul>
-    <li>To show you your own contacts, conversation history, reminders and suggested next steps.</li>
-    <li>To draft messages for you to review. Nothing is sent without your explicit approval.</li>
-    <li>To answer your questions about your own relationships.</li>
-  </ul>
-  <p>Data is never sold, never used for advertising, and never shared with anyone except as described in section 4.</p>
+<h2>1. Where your data lives</h2>
+<p>Renmai is a hosted service. Your account, the data you connect or import, and the sign-in tokens for the services you
+connect are stored on our server, hosted by Fly.io in the United States (San Jose), on an encrypted disk. Sign-in tokens
+are additionally encrypted by Renmai before they are written. Only you can see your data in the app. We do not sell it,
+use it for advertising, or share it except as described in section 7.</p>
 
-  <h2>3. Where the data is stored</h2>
-  <p>All data is stored in a database on <strong>your own computer</strong>. The developer of the app does not run a
-    server that receives, collects or stores your data, and has no access to it. Sign-in tokens are stored on your
-    computer only.</p>
+<h2>2. Data Renmai accesses, and only when you connect it</h2>
+<ul>
+<li><b>Gmail, Google Calendar and Google Contacts</b> (Google sign-in): read your mail (gmail.readonly) to remember who you
+talk to and what you discussed, send a message only when you approve that exact message (gmail.send), and read your
+calendar and contacts (calendar.readonly, contacts.readonly) to know who you met and how to reach them.</li>
+<li><b>iMessage and WhatsApp</b>, only if you install the Renmai connector on your own Mac: it reads your Messages and
+WhatsApp Desktop history on that Mac and sends it to your Renmai account; it sends an iMessage only after you approve it.</li>
+<li><b>LinkedIn, X, contacts files</b>: only the data exports you upload yourself.</li>
+<li><b>Publishing (optional)</b>: see section 3.</li>
+</ul>
 
-  <h2>4. AI processing</h2>
-  <p>To summarize conversations and draft messages, the app sends the relevant text to the Claude AI service
-    (Anthropic) using <strong>your own</strong> Claude account, from your computer. This happens only to provide
-    features you use. Data obtained through Google APIs is not used to develop, improve or train generalized AI or
-    machine-learning models.</p>
+<h2>3. Publishing to YouTube, Instagram, Facebook and Threads</h2>
+<p>Renmai lets you write one post (photos or a video plus text) and publish it to the accounts you choose to connect:
+YouTube, Instagram (professional accounts), Facebook Pages you manage, and Threads. You connect each account yourself
+through that platform's official sign-in page and can disconnect it at any time on the Publish page. Nothing is ever
+published until you tap Publish for that specific post, and only to the platforms you selected for it.</p>
+<ul>
+<li><b>YouTube</b> (youtube.upload, youtube.readonly): we upload the video you publish to your own channel, read your
+channel's name and ID to show where the post goes, and read the upload and processing status of that video to tell you
+when it is live. We do not read your other videos, playlists, subscriptions, comments or analytics.</li>
+<li><b>Instagram</b> (instagram_business_basic, instagram_business_content_publish): we read your professional account's
+username and ID, publish the photos or video you chose with your text, and read the link to the new post.</li>
+<li><b>Facebook</b> (pages_show_list, pages_read_engagement, pages_manage_posts): we read the Pages you manage, create the
+post you wrote on the Page, and read that post's link and status. We never post to your personal profile.</li>
+<li><b>Threads</b> (threads_basic, threads_content_publish): we read your Threads username and ID, publish the post you
+wrote, and read its link.</li>
+</ul>
+<p>We use this data only to publish the posts you ask us to publish, show which account each post goes to, tell you whether
+each post went live, and show your recent publishing history. Instagram, Facebook and Threads fetch your photos and videos
+from a web address: for each file you upload we create a long, random, unguessable link on our server that needs no
+sign-in so those platforms can download it. It stops working after 2 days and is not listed anywhere. YouTube receives your
+video directly from our server.</p>
 
-  <h2>5. Chat apps (optional)</h2>
-  <p>If you connect Telegram, WhatsApp, Instagram, Messenger, Slack or Discord, you chat with the app's official
-    account on that service. Your messages to that account pass through a small gateway run by the developer on Cloudflare, which
-    forwards them to your own computer and sends the app's replies back. The gateway keeps a message only until your
-    computer collects it (at most 7 days if it stays offline) and stores nothing else about the conversation except
-    which chat belongs to which computer (for Slack, also the access token your workspace grants when you add the
-    app, used only to reply in your direct messages with it). It never receives your Google data. Messages you send on those services are
-    also subject to their own privacy policies.</p>
+<h2>4. AI processing</h2>
+<p>To summarize conversations, draft messages, suggest who to reach out to and suggest post text, Renmai sends the relevant
+text to OpenAI through its API, only when a feature needs it (for example, drafting a reply sends that conversation).
+OpenAI returns the result to us. Under OpenAI's API terms, data sent through the API is not used to train OpenAI's models.
+We never use data received from Google APIs, YouTube, Instagram, Facebook or Threads to develop, improve or train
+generalized AI or machine-learning models.</p>
 
-  <h2>6. Google API Services User Data Policy</h2>
-  <p>The app's use and transfer to any other app of information received from Google APIs will adhere to the
-    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
-    Policy</a>, including the Limited Use requirements.</p>
+<h2>5. Google API Services and YouTube</h2>
+<p>Renmai's use and transfer to any other app of information received from Google APIs will adhere to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+<p>Renmai uses YouTube API Services. By using Renmai's YouTube features you agree to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. The
+<a href="http://www.google.com/policies/privacy">Google Privacy Policy</a> describes how Google handles your data. You can
+revoke Renmai's access to your Google and YouTube data at any time at
+<a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.
+Your use of Instagram, Facebook and Threads through Renmai is also subject to
+<a href="https://www.facebook.com/privacy/policy/">Meta's Privacy Policy</a>.</p>
 
-  <h2>7. Your control</h2>
-  <ul>
-    <li>You can disconnect Google at any time at
-      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-    <li>You can export or delete any person's data from within the app, or delete the app's data folder entirely.</li>
-    <li>You can pause the app at any time; while paused it sends nothing.</li>
-  </ul>
+<h2>6. How long we keep data</h2>
+<ul>
+<li>Your account data and connected data: until you delete it or your account.</li>
+<li>Photos and videos uploaded for a post: deleted within 2 days after the post has finished, or within 2 days after
+upload if you never publish them; their public links stop working 2 days after upload.</li>
+<li>Publishing history (your text, which platforms, the links and IDs each platform returned): deleted 30 days after the post.</li>
+<li>Sign-in tokens for Google, YouTube, Instagram, Facebook and Threads: kept, encrypted, until you disconnect that
+account or delete your Renmai account. Disconnecting deletes the token at once; for YouTube we also revoke it with Google.</li>
+<li>Backups: the server keeps one daily copy of your database for 14 days, and the hosting provider keeps disk snapshots
+for 5 days. Deleted data disappears from them when they expire.</li>
+</ul>
 
-  <h2>8. Children</h2>
-  <p>The app is not intended for children under 13.</p>
+<h2>7. Who receives data</h2>
+<ul>
+<li>The platform you publish to or send through (Google/Gmail/YouTube, Meta for Instagram, Facebook and Threads), which
+receives the message or post you approved.</li>
+<li>Service providers that run Renmai: Fly.io (hosting and storage), OpenAI (AI features, section 4), and Telegram if you
+choose to talk to Renmai there.</li>
+<li>Authorities, when required by law.</li>
+</ul>
+<p>We do not sell personal data or share it for advertising.</p>
 
-  <h2>9. Changes and contact</h2>
-  <p>If this policy changes, the date above will be updated. Questions:
-    <a href="mailto:gzw13979725269@gmail.com">gzw13979725269@gmail.com</a>.</p>
+<h2>8. Your choices and deletion</h2>
+<ul>
+<li>Disconnect a publishing account on the Publish page, or a mailbox on the Connect page.</li>
+<li>Export your data, sign out everywhere, revoke Google access or delete your account in Settings &gt; Account.</li>
+<li>You can also remove Renmai from a platform's own settings (Google: the link in section 5; Facebook and Instagram:
+Settings &gt; Apps and websites; Threads: Settings &gt; Account &gt; Website permissions). Renmai then can no longer use
+that account; to delete what Renmai already stored, disconnect it in the app or email us.</li>
+<li>Email <a href="mailto:gzw13979725269@gmail.com">gzw13979725269@gmail.com</a> from the address you use with Renmai to
+ask for deletion; we complete it within 7 days. Step-by-step: <a href="https://renmai-agent.fly.dev/data-deletion.html">How to delete your data</a>.</li>
+</ul>
+<p>Deleting data in Renmai does not delete messages you sent or posts you published on other platforms; delete those there.</p>
 
-  <hr>
-  <h2>中文摘要</h2>
-  <p>本应用由你安装在自己的电脑上运行。经你授权后，它可以读取 Gmail（并在你批准某封草稿后才代为发送）、只读访问日历和通讯录，
-    用来整理你的人脉、提醒你该联系谁、帮你起草消息。所有数据只存在你自己的电脑上，开发者没有服务器、也接触不到你的数据；
-    不出售、不用于广告。为了总结和起草，相关文字会通过你自己的 Claude 账号发给 Anthropic 处理，不会用来训练通用 AI 模型。
-    若连接 Telegram、WhatsApp、Instagram、Messenger、Slack 或 Discord，你发给官方账号的消息会经开发者在 Cloudflare 上的网关转发到你的电脑，取走即删（最多保留 7 天），不经手你的 Google 数据。你可以随时在 Google 账户中撤销授权，或在应用里导出、删除任何人的数据。</p>
+<h2>9. Children</h2>
+<p>Renmai is not for children under 13, and we do not knowingly collect their data.</p>
+
+<h2>10. Changes and contact</h2>
+<p>We will update this page, with a new date, when our practices change. Questions or complaints:
+<a href="mailto:gzw13979725269@gmail.com">gzw13979725269@gmail.com</a>. We reply within 7 days.</p>
+
+<h2 lang="zh-CN">中文摘要</h2>
+<p lang="zh-CN">人脉是托管服务，数据存放在 Fly.io 美国机房的加密磁盘上，登录令牌另外加密。只在你连接后读取对应数据：Gmail、日历、
+通讯录、你 Mac 上的 iMessage/WhatsApp、你上传的导出文件，以及你连接的 YouTube、Instagram、Facebook 主页、Threads。
+任何消息或帖子都要你确认后才会发出。起草和总结时会把相关文字发给 OpenAI 处理，不用于训练。发布用的照片视频 2 天内删除，
+发布记录 30 天后删除，备份最多保留 14 天。你可以随时断开、导出或删除账号，也可以发邮件要求删除，我们 7 天内完成。
+另见 <a href="https://renmai-agent.fly.dev/terms.html">服务条款</a>。</p>
+
 </main>
 </body>
 </html>
